@@ -5,7 +5,7 @@ require_login();
 
 // Admin-only check
 if (!isset($_SESSION['is_admin']) || $_SESSION['is_admin'] != 1) {
-    header('Location: ../index.php');
+    header('Location: ../php/login.php');
     exit;
 }
 // AI - generated
