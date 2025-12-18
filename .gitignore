@@ -1,0 +1,14 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+
+# Environment & secrets
+.env
+
+# User uploads
+image/products/*
+!image/products/.gitkeep
+
+# Logs
+*.log
