@@ -124,6 +124,7 @@ $pass = "";
 
 Visit in browser:
 
+do not run it on Egse browser
 http://localhost/webapp
 
 ## Authentication & Security
