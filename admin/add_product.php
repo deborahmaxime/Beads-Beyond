@@ -1,7 +1,6 @@
 <?php
 require '../php/db.php';
 require '../php/auth_session.php';
-require_login();
 
 // Admin-only check
 if (!isset($_SESSION['is_admin']) || $_SESSION['is_admin'] != 1) {
