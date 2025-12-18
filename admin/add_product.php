@@ -8,7 +8,7 @@ if (!isset($_SESSION['is_admin']) || $_SESSION['is_admin'] != 1) {
     header('Location: ../index.php');
     exit;
 }
-
+// AI - generated
 $error = '';
 $success = '';
 
@@ -50,7 +50,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             if (!in_array($file_ext, $allowed_ext) || !in_array($mime, $allowed_mime)) {
                 $error = "Invalid image format. Allowed: jpg, jpeg, png, gif.";
             } else {
-                // ✅ CORRECT ABSOLUTE PATH (DO NOT USE DOCUMENT_ROOT)
+                //  CORRECT ABSOLUTE PATH 
                 $upload_dir = '/home/deborah.maxime/public_html/webapp/image/products/';
 
                 if (!is_dir($upload_dir)) {
@@ -65,7 +65,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 } else {
                     // Save relative path for web use
                     $image_for_db = $new_name;
-
+                    // AI generated stops here
                     $stmt = $pdo->prepare("
                         INSERT INTO products
                         (category_id, name, description, base_price, image, is_customizable, stock_quantity, created_at, updated_at)
