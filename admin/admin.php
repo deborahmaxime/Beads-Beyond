@@ -1,7 +1,6 @@
 <?php
 require '../php/db.php';
 require '../php/auth_session.php';
-require_login();
 
 // Redirect non-admin users
 if (!is_logged_in() || $_SESSION['is_admin'] !== 1) {
