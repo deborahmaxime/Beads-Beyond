@@ -31,7 +31,9 @@ if ($category) {
     <meta charset="UTF-8">
     <title>Admin - Manage Products | Beads & Beyond</title>
     <link rel="stylesheet" href="../css/style.css">
+    <!-- // AI generated-->
     <style>
+        
         .products-table {
             width: 100%;
             border-collapse: collapse;
@@ -74,7 +76,9 @@ if ($category) {
         .category-grid a:hover {
             opacity: 0.85;
         }
+        
     </style>
+    <!-- // AI generated stops here-->
 </head>
 <body>
 
