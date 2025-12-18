@@ -1,7 +1,6 @@
 <?php
 require '../php/db.php';
 require '../php/auth_session.php';
-require_login();
 
 // Admin-only access
 if (!is_logged_in() || intval($_SESSION['is_admin']) !== 1) {
@@ -49,7 +48,7 @@ $orders = $stmt->fetchAll();
 <section class="admin-dashboard">
     <h1>Customer Orders</h1>
     <p>View and manage all customer orders</p>
-
+<!-- AI GENERATED -->
     <table class="orders-table">
         <thead>
             <tr>
@@ -99,6 +98,7 @@ $orders = $stmt->fetchAll();
         </tbody>
     </table>
 </section>
+    <!-- AI GENERATED stops here-->
 
 <footer class="footer">
     <p>© <?= date('Y') ?> Beads & Beyond • Admin</p>
