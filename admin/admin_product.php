@@ -1,11 +1,9 @@
 <?php
 require '../php/db.php';
 require '../php/auth_session.php';
-require_login();
-
 // Block non-admin users
 if (!is_logged_in() || $_SESSION['is_admin'] !== 1) {
-    header('Location: ../index.php');
+    header('Location: ../php/login.php');
     exit;
 }
 
