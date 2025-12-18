@@ -1,7 +1,7 @@
 <?php
 require '../php/db.php';
 require '../php/auth_session.php';
-require_login();
+
 
 // Admin-only access
 if (!is_logged_in() || $_SESSION['is_admin'] !== 1) {
@@ -11,7 +11,7 @@ if (!is_logged_in() || $_SESSION['is_admin'] !== 1) {
 
 $error = '';
 $success = '';
-
+//AI GENERATED PLUS DEBUG
 // Handle delete user
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['delete_id'])) {
     $delete_id = (int) $_POST['delete_id'];
@@ -34,7 +34,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['status_id'], $_POST['
         $success = "User status updated.";
     }
 }
-
+//AI generated stops here
 // Fetch all users
 $users = $pdo->query("SELECT user_id, full_name, email, phone, is_admin, created_at FROM users ORDER BY created_at DESC")->fetchAll();
 ?>
