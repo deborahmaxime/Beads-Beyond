@@ -45,6 +45,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 
     if (!$error) {
+        // AI generated
         // Handle image upload if a new file is provided
         if (isset($_FILES['image']) && $_FILES['image']['error'] === 0) {
             $allowed_ext  = ['jpg','jpeg','png','gif'];
@@ -86,6 +87,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     updated_at = NOW()
                 WHERE product_id = ?
             ");
+            // AI generated stops here
             $stmt->execute([
                 $category_id,
                 $name,
